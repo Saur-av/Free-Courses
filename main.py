@@ -15,8 +15,8 @@ def enroll_udemy(courseurls : list) -> list:
     with SB(uc=True) as sb:
         sb.driver.get("https://www.udemy.com/")
         sb.click('a[data-purpose="header-login"]')
-        sb.get_element('[name="email"]').send_keys("ryanxboyy69@gmail.com")
-        sb.get_element('[name="password"]').send_keys("ryanXboyyy.96@AU")
+        sb.get_element('[name="email"]').send_keys("username@gmail.com")
+        sb.get_element('[name="password"]').send_keys("password")
         sb.click('button:contains("Log in")')
         enrolled = []
         for url in courseurls:
